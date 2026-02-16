@@ -16,6 +16,6 @@ public class Anagram {
     
     public static void main(String[] args) {
         Anagram anagram = new Anagram();
-        System.out.println(anagram.isAnagram("cat","act"));
+        System.out.println(anagram.isAnagram("rat","act"));
     }
 }
