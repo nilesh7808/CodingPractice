@@ -1,10 +1,11 @@
 package CodingProblems.OOPs.Inheritance;
 
+import java.util.Scanner;
 
 class  Account {
     protected  double balance;
     void deposit(double amount){
-        balance = balance + amount;
+        balance += amount;
     }
 }
 
@@ -19,7 +20,12 @@ class SavingAccount extends Account{
 public class SimpleBankingInheritance {
     public static void main(String[] args) {
         SavingAccount savingAccount = new SavingAccount();
-        savingAccount.interestRate = 12;
+        System.out.print("Please Enter Amount to deposit: ");
+        Scanner sc = new Scanner(System.in);
+        double amount = sc.nextInt();
+        savingAccount.deposit(amount);
+        double interestRateValue = 0.002;
+        savingAccount.interestRate = interestRateValue;
         savingAccount.addInterest();
     }
 }
