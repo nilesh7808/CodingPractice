@@ -6,6 +6,7 @@ class  Account {
     protected  double balance;
     void deposit(double amount){
         balance += amount;
+        System.out.println("Old Balance: " + balance);
     }
 }
 
@@ -13,7 +14,7 @@ class SavingAccount extends Account{
     double interestRate;
     void addInterest(){
         balance += balance * interestRate;
-        System.out.println("Balance: " + balance);
+        System.out.println("Updated Balance after adding Interest on every deposit: " + balance);
     }
 }
 
