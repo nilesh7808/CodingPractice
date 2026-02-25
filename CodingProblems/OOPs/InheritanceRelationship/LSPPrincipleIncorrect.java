@@ -25,7 +25,7 @@ class Square extends Rectangle{
     }
 }
 
-public class LSPPrinciple {
+public class LSPPrincipleIncorrect {
 
     public static void main(String[] args) {
 //        Rectangle r = new Rectangle();
