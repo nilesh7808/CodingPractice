@@ -7,7 +7,7 @@ class Engine{
 }
 
 class Car{
-    private Engine engine; // car HAS-A relation
+    private final Engine engine; // car HAS-A relation
     public Car(){
         this.engine = new Engine();
     }
