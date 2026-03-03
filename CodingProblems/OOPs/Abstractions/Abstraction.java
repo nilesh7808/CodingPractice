@@ -1,4 +1,4 @@
-package CodingProblems.OOPs;
+package CodingProblems.OOPs.Abstractions;
 
 abstract class PaymentService{
     abstract void pay(double amount);
