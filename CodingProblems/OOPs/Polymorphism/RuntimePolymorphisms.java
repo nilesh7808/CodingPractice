@@ -1,14 +1,23 @@
 package CodingProblems.OOPs.Polymorphism;
 
 class Animalia{
-    void makeSound(){
+//    protected void makeSound(){
+//        System.out.println("Animal Sound...");
+//    }
+
+    public void makeSound(){
         System.out.println("Animal Sound...");
     }
 }
 
 class Cat extends Animalia{
+
+    //    protected void makeSound(){
+//        System.out.println("Meow Meow...");
+//    }
+
     @Override
-    void makeSound() {
+    public void makeSound() {
         System.out.println("Meow Meow ...");
     }
 }
